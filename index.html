@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="conteiner">
+        <section>
+             <div class="circle"></div> 
+            <header>
+                <a href="https://www.starbucks.com/"><img src="social/logo.png" class="logo"></a>
+                <ul class="menu">
+                    <li><a href="https://www.starbucks.com/">HOME</a></li>
+                    <li><a href="https://www.starbucks.com/menu">MENU</a></li>
+                    <li><a href="https://www.starbucks.com/rewards">WHAT'S NEW</a></li>
+                </ul>
+                
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>It's not just coffee<br>It'<span>Starbucks</span></h2>
+                    <p>It takes many hands to craft the perfect cup of coffee 
+                     from the farmers who tend to the red-ripe coffee cherries,
+                     to the master roasters who coax the best from every bean, and to the barista who serves it with care.</p>
+                    <p>We are committed to the highest standards of quality and service, embracing our heritage while innovating to create new experiences to savor.</p><br>
+                    <a href="https://stories.starbucks.com/stories/coffee-craft/" >Learn More</a>
+                </div>
+                <div class="imgBox">
+                    <img src="image/cafee5.png" class="starbucks">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="thumb/thumb1.png" onclick="imgSlider('image/cafee5.png');changeCircleColor('#017143')"></li>
+                <li><img src="/thumb/thumb2.png" onclick="imgSlider('image/cafee4.png');changeCircleColor('#eb7495')"></li>
+                <li><img src="/thumb/thumb3 (1).png"onclick="imgSlider('image/cafee3.png');changeCircleColor('#d752b1')"></li>
+            </ul> 
+           
+              <ul class="sci">
+                <li class="f"><a href="https://www.facebook.com/Starbucks/"><img src="/social/facebook.png"></a></li>
+                <li class="t"><a href="https://twitter.com/starbucks/"><img src="/social/twitter.png"></a></li>
+                <li class="i"><a href="https://www.instagram.com/starbucks/"><img src="/social/instagram.png"></a></li>
+                <li class="i"><a href="https://www.linkedin.com/in/lautaro-ricagni-33a57b214/"><img src="/social/linkedin.png"></a></li>
+            </ul>  
+        </section>
+        <script type="text/javascript">
+            function imgSlider(anything){
+              document.querySelector('.starbucks').src= anything;
+            }
+            function changeCircleColor(color){
+                const circle=document.querySelector('.circle');
+                circle.style.background=color;
+            }
+       </script>
+    </div>
+</body>
+</html>
