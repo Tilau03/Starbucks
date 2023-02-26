@@ -1,6 +1,6 @@
 ## Descripction 🏕️
 
-Starbuck interactive Page :p
+Starbucks interactive Page :p
 
 ## By :
 
